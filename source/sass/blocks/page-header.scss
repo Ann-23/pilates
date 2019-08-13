@@ -1,0 +1,67 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.page-header__link {
+  display: block;
+  margin: 0;
+  width: 38px;
+  height: 31px;
+  background-image: url("../img/logo_mobile.png");
+  background-repeat: no-repeat;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.page-header__number {
+	display: none;
+  margin: 0;
+  font-family: "San Francisco Text Bold";
+  font-size: 14px;
+  font-weight: 700;
+  color: $black;
+  line-height: 18px;
+  text-decoration: none;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover {
+    color: $main-color;
+  }
+  &:active {
+    color: $green-light;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-around;
+  }
+
+  .page-header__link {
+    width: 51px;
+    height: 42px;
+    background-image: url("../img/logo_tablet.png");
+  }
+
+	.page-header__number {
+		display: block;
+    line-height: 35px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__link {
+    width: 63px;
+    height: 53px;
+    background-image: url("../img/logo_desktop.png");
+  }
+
+  .page-header__number {
+    line-height: 51px;
+  }
+}

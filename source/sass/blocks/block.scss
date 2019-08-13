@@ -1,0 +1,446 @@
+.block {
+	position: relative;
+}
+
+.block:nth-of-type(1):after,
+.block:nth-of-type(3):after {
+	content: "";
+	position: absolute;
+	top: 37px;
+	left: 174px;
+	width: 71px;
+	height: 69px;
+  background-image: url("../img/points.png");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.block:nth-of-type(1):after {
+  top: 45px;
+  left: 177px;
+}
+
+.block:nth-of-type(3):after {
+  top: 82px;
+  left: 190px;
+}
+
+.block:nth-child(2):before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 46px;
+  width: 183px;
+  height: 256px;
+  background-image: url("../img/girl_ball1-mobile.png");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.block:nth-child(3):before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  left: 120px;
+  width: 183px;
+  height: 340px;
+  background-image: url("../img/girl_ball2-mobile.png");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.block:nth-child(4):before {
+  content: "";
+  position: absolute;
+  top: 117px;
+  left: 10px;
+  width: 260px;
+  height: 175px;
+  background-image: url("../img/girl_ball3-mobile.png");
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.block:nth-child(5):before {
+  content: "";
+  position: absolute;
+  top: 84px;
+  left: -12px;
+  width: 320px;
+  height: 220px;
+  background-image: url("../img/girl_ball4-mobile.png");
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.block__padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.block__title {
+  margin: 0;
+  padding-bottom: 272px;
+  font-family: "Roboto", "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	text-align: center;
+}
+
+.block:nth-child(3) .block__title {
+  padding-bottom: 293px;
+}
+
+.block:nth-child(4) .block__title {
+  padding-bottom: 300px;
+}
+
+.block:nth-child(5) .block__title {
+  padding-bottom: 308px;
+}
+
+.block__text {
+	margin: 0;
+	padding-bottom: 74px;
+  font-family: "San Francisco Text Light", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 17px;
+  text-align: center;
+}
+
+.block__text:before {
+	content: "";
+	position: absolute;
+	top: 45px;
+	left: 54px;
+	width: 195px;
+	height: 195px;
+	background-color: $green-light;
+	border-radius: 50%;
+}
+
+.block:nth-child(3) .block__text:before,
+.block:nth-child(5) .block__text:before {
+  top: 40px;
+  left: 27px;
+  width: 234px;
+  height: 234px;
+}
+
+.block:nth-child(3) .block__text:after,
+.block:nth-child(5) .block__text:after {
+  content: "";
+  position: absolute;
+  top: 83px;
+  left: 70px;
+  width: 150px;
+  height: 150px;
+  background-color: $white;
+  background-image: none;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.block:nth-child(5) .block__text:after {
+  top: 120px;
+  left: 79px;
+  width: 115px;
+  height: 115px;
+}
+
+.block:nth-child(4) .block__text:before {
+  top: 65px;
+  left: 47px;
+}
+
+.block:nth-child(5) .block__text:before {
+  top: 73px;
+  left: 31px;
+  width: 210px;
+  height: 210px;
+}
+
+.block:nth-child(5) .block__text {
+  padding-bottom: 52px;
+}
+
+.block:nth-child(4) .block__text {
+	padding-left: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .block {
+    padding-top: 58px;
+    padding-bottom: 120px;
+    padding-left: 56px;
+    padding-right: 270px;
+  }
+
+  .block:nth-child(4) {
+    padding-top: 113px;
+    padding-right: 360px;
+    padding-left: 31px;
+  }
+
+  .block:nth-child(3) {
+    padding-top: 90px;
+    padding-left: 346px;
+    padding-right: 4px;
+  }
+
+  .block:nth-child(5) {
+    padding-top: 72px;
+    padding-bottom: 109px;
+    padding-left: 349px;
+    padding-right: 0;
+  }
+
+  .block:nth-of-type(2):after,
+  .block:nth-of-type(4):after {
+    top: 75px;
+    left: 90px;
+  }
+
+  .block:nth-of-type(1):after {
+    top: 16px;
+    left: 530px;
+  }
+
+  .block:nth-of-type(3):after {
+    top: 93px;
+    left: 493px;
+  }
+
+  .block__title {
+    padding-bottom: 32px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  .block:nth-child(3) .block__title {
+    padding-bottom: 28px;
+  }
+
+  .block:nth-child(4) .block__title {
+    padding-bottom: 23px;
+  }
+
+  .block:nth-child(5) .block__title {
+    padding-bottom: 28px;
+  }
+
+  .block__text {
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  .block__text:before {
+    top: 16px;
+    left: 407px;
+    width: 196px;
+    height: 196px;
+  }
+
+  .block:nth-child(3) .block__text:before {
+    top: 31px;
+    left: 49px;
+    width: 235px;
+    height: 235px;
+  }
+
+  .block:nth-child(5) .block__text:before {
+    top: 52px;
+    left: 46px;
+    width: 210px;
+    height: 210px;
+  }
+
+  .block:nth-child(4) .block__text:before {
+    top: 74px;
+    left: 349px;
+  }
+
+  .block:nth-child(3) .block__text:after {
+    top: 73px;
+    left: 92px;
+  }
+
+  .block:nth-child(5) .block__text:after {
+    top: 98px;
+    left: 96px;
+  }
+
+  .block:nth-child(2):before {
+    top: -61px;
+    left: 378px;
+    width: 229px;
+    height: 322px;
+    background-image: url("../img/girl_ball1-tablet.png");
+    z-index: 3;
+  }
+
+  .block:nth-child(3):before {
+    top: -69px;
+    left: 81px;
+    height: 372px;
+    background-image: url("../img/girl_ball2-tablet.png");
+  }
+
+  .block:nth-child(4):before {
+    top: 112px;
+    left: 293px;
+    width: 294px;
+    height: 195px;
+    background-image: url("../img/girl_ball3-tablet.png");
+  }
+
+  .block:nth-child(5):before {
+    top: 22px;
+    left: -29px;
+    width: 391px;
+    height: 295px;
+    background-image: url("../img/girl_ball4-tablet.png");
+  }
+
+  .block__padding {
+    padding:0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .block {
+    padding-top: 117px;
+    padding-bottom: 140px;
+    padding-right: 670px;
+    padding-left: 95px;
+  }
+
+  .block:nth-child(3) {
+    padding-top: 285px;
+    padding-bottom: 206px;
+    padding-left: 692px;
+  }
+
+  .block:nth-child(4) {
+    padding-top: 240px;
+    padding-bottom: 173px;
+    padding-right: 650px;
+    padding-left: 93px;
+  }
+
+  .block:nth-child(5) {
+    padding-top: 293px;
+    padding-bottom: 130px;
+    padding-left: 728px;
+    padding-right: 77px;
+  }
+
+  .block:nth-child(2):before {
+    top: -152px;
+    left: 576px;
+    width: 389px;
+    height: 548px;
+    background-image: url("../img/girl_ball1-desktop.png");
+  }
+
+  .block:nth-child(3):before {
+    top: -26px;
+    left: 205px;
+    width: 261px;
+    height: 650px;
+    background-image: url("../img/girl_ball2-desktop.png");
+  }
+
+  .block:nth-child(4):before {
+    top: 217px;
+    left: 506px;
+    width: 496px;
+    height: 330px;
+    background-image: url("../img/girl_ball3-desktop.png");
+  }
+
+  .block:nth-child(5):before {
+    top: 192px;
+    left: 46px;
+    width: 671px;
+    height: 442px;
+    background-image: url("../img/girl_ball4-desktop.png");
+  }
+
+  .block:nth-child(3) .block__title,
+  .block:nth-child(4) .block__title,
+  .block:nth-child(5) .block__title {
+    padding-bottom: 15px;
+  }
+
+  .block:nth-child(3) .block__text:before,
+  .block:nth-child(5) .block__text:before {
+    top: 122px;
+    left: 106px;
+    width: 465px;
+    height: 465px;
+  }
+
+  .block:nth-child(4) .block__text:before {
+    top: 127px;
+    left: 581px;
+  }
+
+  .block:nth-child(5) .block__text:before {
+    top: 148px;
+    left: 90px;
+    width: 446px;
+    height: 446px;
+  }
+
+  .block__text {
+    line-height: 23px;
+  }
+
+  .block__text:before {
+    top: -14px;
+    left: 625px;
+    width: 376px;
+    height: 376px;
+  }
+
+  .block:nth-of-type(1):after,
+  .block:nth-of-type(3):after {
+    top: -14px;
+    left: 861px;
+    width: 137px;
+    height: 132px;
+    background-image: url("../img/points_desktop.png");
+    z-index: 2;
+  }
+
+  .block:nth-of-type(3):after {
+    top: 164px;
+    left: 853px;
+  }
+
+  .block:nth-child(3) .block__text:after {
+    top: 167px;
+    left: 151px;
+    width: 375px;
+    height: 375px;
+  }
+
+  .block:nth-child(5) .block__text:after {
+    top: 195px;
+    left: 138px;
+    width: 353px;
+    height: 353px;
+  }
+
+  .block__title {
+    padding-bottom: 22px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}

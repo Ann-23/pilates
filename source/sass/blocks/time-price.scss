@@ -1,0 +1,48 @@
+.time-price {
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.time-price__title {
+  margin: 0;
+  padding-bottom: 30px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .time-price {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .time-price__title {
+    padding-left: 30px;
+    padding-bottom: 44px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+  .time-price {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 84px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .time-price__title {
+    padding-left: 3px;
+    padding-bottom: 64px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+}

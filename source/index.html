@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Main</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="preload" href="fonts/roboto.woff2" as="font">
+    <link rel="preload" href="fonts/robotobold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
+  </head>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed">
+        <a class="page-header__link" aria-label="Логотип"></a>
+        <button class="main-nav__toggle button" type="button">
+          <span class="visually-hidden">Кнопка открыть-закрыть меню</span>
+        </button>
+        <a href="tel:+79183650607" class="page-header__number">+7 918 365 06 07</a>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active" href="#">О пилатесе</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Расписание и стоимость</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Как проходят занятия</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Отзывы</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="top">
+        <div class="top__intro">
+          <h1 class="top__title">Студия пилатеса</h1>
+          <p class="top__text">Твое здоровое тело через 10 занятий</p>
+          <a href="#time-table" class="top__toggle button button--top" aria-label="Ссылка для просмотра расписания">
+            Смотреть расписание
+          </a>
+        </div>
+        <div class="top_pagination">
+          <span class="top_number">01</span>
+          <ul class="top_list">
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__intro">
+          <h2 class="about__title">&mdash; О пилатесе</h2>
+          <p class="about__text">Пилатес соединяет элементы растяжки с&nbsp;элементами силовой тренировки</p>
+          <p class="about__text">Комплекс упражнений укрепляет мышцы пресса и спины, улучшает гибкость мышц и связок, подвижность суставов и&nbsp;избавляет от&nbsp;дискомфорта в&nbsp;позвоночнике</p>
+          <a href="#" class="about__link" aria-label="Подробнее">Подробнее </a>
+        </div>
+        <div class="top_pagination">
+          <span class="top_number">02</span>
+          <ul class="top_list">
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="time-price" id="time-table">
+        <h2 class="time-price__title">&mdash; Расписание и стоимость</h2>
+        <div class="level">
+          <div class="level__intro">
+            <p class="level__title">Уровень</p>
+            <p class="level__status">новичок</p>
+            <p class="level__price">150 руб. / занятие</p>
+            <ul class="level__time-table">
+              <li class="level__item">пн 9:00 &mdash; 10:00</li>
+              <li class="level__item">ср 9:00 &mdash; 10:00</li>
+              <li class="level__item">пт 9:00 &mdash; 10:00</li>
+            </ul>
+            <button class="level__button button button--level" type="button">Записаться
+              <span class="visually-hidden">Кнопка записи на занятия уровня новичок</span>
+            </button>
+          </div>
+          <div class="level__intro">
+            <p class="level__title">Уровень</p>
+            <p class="level__status">профи</p>
+            <p class="level__price">200 руб. / занятие</p>
+            <ul class="level__time-table">
+              <li class="level__item">пн 18:00 &mdash; 19:30</li>
+              <li class="level__item">ср 18:00 &mdash; 19:30</li>
+              <li class="level__item">пт 18:00 &mdash; 19:30</li>
+            </ul>
+            <button class="level__button button button--level" type="button">Записаться
+              <span class="visually-hidden">Кнопка записи на занятия уровня профи</span>
+            </button>
+          </div>
+          <div class="level__intro">
+            <p class="level__title">Уровень</p>
+            <p class="level__status">мастер</p>
+            <p class="level__price">350 руб. / занятие</p>
+            <ul class="level__time-table">
+              <li class="level__item">пн 20:00 &mdash; 21:30</li>
+              <li class="level__item">ср 20:00 &mdash; 21:30</li>
+              <li class="level__item">пт 20:00 &mdash; 21:30</li>
+            </ul>
+            <button class="level__button button button--level" type="button">Записаться
+              <span class="visually-hidden">Кнопка записи на занятия уровня мастер</span>
+            </button>
+          </div>
+        </div>
+        <div class="top_pagination">
+          <span class="top_number">03</span>
+          <ul class="top_list">
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="training">
+        <h2 class="training__title">&mdash; Как проходят занятия</h2>
+        <div class="block">
+          <p class="block__title">Дыхательные техники</p>
+          <p class="block__text">Специальные дыхательные упражнения помогут сконцентрировать внимание <span class="block__padding">и&nbsp;сфокусировать сознание</span> на&nbsp;мышцах&nbsp;тела</p>
+        </div>
+        <div class="block">
+          <p class="block__title">Разминка</p>
+          <p class="block__text">Перед началом занятия разогреваем тело: проработываем мышцы спины, шеи, выполняем упражнения на баланс под&nbsp;спокойную музыку</p>
+        </div>
+        <div class="block">
+          <p class="block__title">Основной блок</p>
+          <p class="block__text">Упражнения выполняются лежа на коврике без&nbsp;оборудования или с малым оборудованием, в&nbsp;медленном темпе </p>
+        </div>
+        <div class="block">
+          <p class="block__title">Стрейчинг</p>
+          <p class="block__text">В конце занятия выполняем специальные упражнения для развития гибкости, снятия усталости, стресса и мышечного напряжения</p>
+        </div>
+      </section>
+      <section class="feedback">
+        <h2 class="feedback__title">&mdash; Отзывы</h2>
+        <div class="feedback__item">
+          <p class="feedback__name">Вероника Кулешова</p>
+          <p class="feedback__info">25 лет
+            <span class="feedback__social">
+              <a href="#" aria-label="Вконтакте">
+                <svg class="feedback__link-icon feedback__link-icon--vk"><use xlink:href="#sprite-icon-vk"></use></svg>
+              </a>
+              <a href="#" aria-label="Инстаграмм">
+                <svg class="feedback__link-icon feedback__link-icon--instagramm"><use xlink:href="#sprite-icon-inst"></use></svg>
+              </a>
+            </span>
+          </p>
+          <p class="feedback__text">Хожу на пилатес уже пять месяцев. После&nbsp;десяти&nbsp;занятий уже увидела результат: тело подтянулось, улучшилась осанка, появился&nbsp;пресс. <span class="feedback__remark">И&nbsp;самое главное, пропал сильный изгиб поясничного отдела, который меня очень беспокоил.</span></p>
+        </div>
+        <div class="feedback__item">
+          <p class="feedback__name">Елизавета Смирнова</p>
+          <p class="feedback__info">29 лет
+            <span class="feedback__social">
+              <a href="#" aria-label="Вконтакте">
+                <svg class="feedback__link-icon feedback__link-icon--vk"><use xlink:href="#sprite-icon-vk"></use></svg>
+              </a>
+              <a href="#" aria-label="Инстаграмм">
+                <svg class="feedback__link-icon feedback__link-icon--instagramm"><use xlink:href="#sprite-icon-inst"></use></svg>
+              </a>
+            </span>
+          </p>
+          <p class="feedback__text">Очень нравятся занятия, хожу уже пять месяцев. На занятиях делаем много упражнений на пресс, бедра и спину. Мышци подтянулись, появился рельеф и хорошее настроение :)</p>
+        </div>
+        <div class="feedback__item">
+          <p class="feedback__name">Кристина Егорова</p>
+          <p class="feedback__info">23 лет
+            <span class="feedback__social">
+              <a href="#" aria-label="Вконтакте">
+                <svg class="feedback__link-icon feedback__link-icon--vk"><use xlink:href="#sprite-icon-vk"></use></svg>
+              </a>
+              <a href="#" aria-label="Инстаграмм">
+                <svg class="feedback__link-icon feedback__link-icon--instagramm"><use xlink:href="#sprite-icon-inst"></use></svg>
+              </a>
+            </span>
+          </p>
+          <p class="feedback__text">Рекомендую заниматься всем! У меня сколиоз и спина часто болит после рабочего дня. После занятий появилась лекость в мышцах и свобода движений. Приходите!</p>
+        </div>
+        <div class="feedback__toggles controls">
+          <button class="controls__toggle controls__toggle--active" data-filter="1" type="button"><span class="visually-hidden">Слайдер 1</span></button>
+          <button class="controls__toggle" data-filter="2" type="button"><span class="visually-hidden">Слайдер 2</span></button>
+          <button class="controls__toggle" data-filter="3" type="button"><span class="visually-hidden">Слайдер 3</span></button>
+        </div>
+        <button class="feedback__button feedback__button--left" type="button">
+          <span class="visually-hidden">Кнопка пролистывания влево</span>
+          <svg class="feedback__row" width="22" height="42"><use xlink:href="#sprite-arrow-left"></use></svg>
+        </button>
+        <button class="feedback__button feedback__button--right" type="button">
+          <span class="visually-hidden">Кнопка пролистывания вправо</span>
+          <svg class="feedback__row" width="22" height="42"><use xlink:href="#sprite-arrow-right"></use></svg>
+        </button>
+        <div class="top_pagination">
+          <span class="top_number">05</span>
+          <ul class="top_list">
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+            <li class="top_section"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">&mdash; Контакты</h2>
+        <div class="contacts__data">
+          <p class="contacts__point">Адрес</p>
+          <p class="contacts__item contacts__item--address">г. Кропоткин ул. Дугинец 10а</p>
+          <p class="contacts__point">Телефон</p>
+          <a href="tel:+79183650607" class="contacts__item contacts__item--number">+7 918 365 06 07</a>
+          <p class="contacts__point">E-mail</p>
+          <a href="mailto:pilatesplus@gmail.com" class="contacts__item">pilatesplus@gmail.com</a>
+        </div>
+        <div class="contacts__map"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__logo" aria-label="Логотип"></a>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Мы во Вконтакте">
+            <svg class="social__link-icon social__link-icon--vk"><use xlink:href="#sprite-icon-vk"></use></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
+            <svg class="social__link-icon social__link-icon--facebook"><use xlink:href="#sprite-icon-facebook"></use></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagramm" href="#" aria-label="Мы в Инстаграмме">
+            <svg class="social__link-icon social__link-icon--instagramm"><use xlink:href="#sprite-icon-inst"></use></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright">Pilates Plus, 2017 &copy;</p>
+    </footer>
+    <div class="pop-up pop-up--close">
+      <button class="pop-up__button-close" aria-label="Кнопка закрытия поп-апа"></button>
+      <form class="pop-up__form" method="post">
+        <h3 class="pop-up__title">Хочешь записаться на занятие?</h3>
+        <p class="pop-up__text">Оставьте контакты и наши менеджеры свяжутся в ближайшее время</p>
+        <div class="form__data input">
+          <label class="input__label input--contacts">
+            <input class="input__control input__control--contacts" type="tel" name="tel" placeholder="Телефон">
+          </label>
+          <label class="input__label input--name">
+            <input class="input__control input__control--name" type="text" name="firstname" placeholder="Имя">
+          </label>
+          <label class="input__label input--email">
+            <input class="input__control input__control--contacts" type="email" name="email" placeholder="E-mail">
+          </label>
+        </div>
+        <div class="pop-up__footer">
+          <label class="checkbox">
+            <input class="visually-hidden checkbox__control" type="checkbox" name="agreement" checked="">
+            <span class="checkbox__label">Я согласен на обработку персональных данных</span>
+          </label>
+          <button class="pop-up__button button button--sign-up">Записаться</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+</html>

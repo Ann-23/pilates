@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__link-icon--vk {
+  fill: $white;
+  width: 40px;
+  height: 30px;
+}
+
+.social__link-icon--facebook {
+  fill: $white;
+  width: 9px;
+  height: 19px;
+}
+
+.social__link-icon--instagramm {
+  fill: $white;
+	width: 40px;
+  height: 30px;
+}
+
+.social__link-icon--vk,
+.social__link-icon--facebook,
+.social__link-icon--instagramm {
+  &:hover {
+    fill: $green-light;
+  }
+
+  &:active {
+    fill: $green-dark;
+  }
+}

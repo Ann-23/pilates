@@ -1,0 +1,130 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 190px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-image: url("../img/people_left-mobile.png"), url("../img/people_right-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 23px 310px, 109px 235px;
+}
+
+.about__title {
+  margin: 0;
+  padding-bottom: 30px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.about__text {
+  margin: 0;
+  padding-bottom: 15px;
+  font-family: "San Francisco Text Light";
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 16px;
+}
+
+.about__text:nth-child(3) {
+  padding-bottom: 21px;
+}
+
+.about__link {
+  position: relative;
+  font-family: "San Francisco Text Medium";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $green-dark;
+}
+
+.about__link::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -12px;
+  width: 7px;
+  height: 7px;
+  border-bottom: 3px solid $green-dark;
+  border-right: 3px solid $green-dark;
+  transform: rotate(-45deg);
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding-top: 88px;
+    padding-bottom: 168px;
+    padding-left: 60px;
+    padding-right: 380px;
+    background-image: url("../img/people_left-tablet.png"), url("../img/people_right-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 283px 333px, 397px 181px;
+  }
+
+  .about__title {
+    padding-bottom: 39px;
+    padding-left: 32px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .about__text {
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: -1px;
+  }
+
+  .about__text:nth-of-type(2) {
+    padding-bottom: 43px;
+  }
+
+  .about__link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+
+  .about__link::after {
+  	top: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    position: relative;
+    padding-top: 98px;
+    padding-bottom: 495px;
+    padding-right: 865px;
+    padding-left: 98px;
+    background-image: url("../img/people_left-desktop.png"), url("../img/people_right-desktop.png"), url("../img/points_big.png");
+    background-repeat: no-repeat;
+    background-position: 408px 431px, 642px 119px, 525px 317px;
+  }
+
+  .about__title {
+    padding-left: 5px;
+    padding-bottom: 55px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .about__text {
+    padding-bottom: 27px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+
+  .about__text:nth-child(2) {
+    padding-right: 0;
+  }
+
+  .about__text:nth-of-type(2) {
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,164 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "San Francisco Text Medium", "Arial", sans-serif;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button--top {
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
+  width: 160px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 11px;
+  color: $white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 50px;
+
+  &:hover {
+    color: $main-color;
+    background-color: $white;
+  }
+  &:active {
+    color: $white;
+    background-color: $white-30;
+  }
+}
+
+.button--level {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
+  width: 130px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: $white;
+  border: 2px solid white;
+  border-radius: 50px;
+
+  &:hover {
+    color: $main-color;
+    background-color: $white;
+  }
+  &:active {
+    color: $white;
+    background-color: $white-30;
+  }
+}
+
+.button--sign-up {
+  margin: 0 auto;
+  margin-top: 33px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
+  width: 160px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: $white;
+  background-color: $green;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .button--top {
+    position: relative;
+    margin-top: 45px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-size: 14px;
+    line-height: 14px;
+    width: 250px;
+  }
+
+  .button--level {
+    position: relative;
+  }
+
+  .button--top:before,
+  .button--top:after,
+  .button--level:before,
+  .button--level:after {
+  	content: "";
+  	display: block;
+  	position: absolute;
+  }
+
+  .button--top:before,
+  .button--level:before {
+    top: 26px;
+    left: 213px;
+    width: 73px;
+    height: 2px;
+    background-color: $white;
+  }
+
+  .button--top:after,
+  .button--level:after {
+    top: 22px;
+    left: 276px;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-bottom: 2px solid $white;
+    border-right: 2px solid $white;
+    transform: rotate(-45grad);
+  }
+
+  .button--level:before {
+    top: 12px;
+    left: 115px;
+    width: 32px;
+  }
+
+  .button--level:after {
+    top: 8px;
+    left: 137px;
+  }
+
+  .button--sign-up {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--level {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 235px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .button--level:before {
+    top: 24px;
+    left: 195px;
+    width: 70px;
+  }
+
+  .button--level:after {
+    top: 20px;
+    left: 255px;
+  }
+
+  .button--sign-up {
+    padding-top: 17px;
+    padding-bottom: 20px;
+    width: 235px;
+    font-size: 19px;
+  }
+}

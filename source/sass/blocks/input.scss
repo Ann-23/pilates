@@ -1,0 +1,67 @@
+.input {
+  margin: 0 auto;
+  max-width: 180px;
+}
+
+.input__control {
+  box-sizing: border-box;
+  margin-bottom: 23px;
+  padding: 5px;
+  padding-left: 0;
+  width: 170px;
+  font-family: "San Francisco Text Light", "Ariel", "sans-serif";
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 19px;
+  color: $black;
+  border: none;
+  border-bottom: 2px solid $black;
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    max-width: 565px;
+  }
+
+  .input--name {
+    order: -1;
+    padding-left: 2px;
+  }
+
+  .input--email {
+    padding-right: 3px;
+  }
+
+  .input__control {
+    width: 145px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input {
+    padding-bottom: 67px;
+    max-width: 860px;
+  }
+
+  .input__control {
+    padding-bottom: 10px;
+    width: 225px;
+    font-size: 16px;
+  }
+
+  .input--name {
+    padding-left: 10px;
+  }
+
+  .input--email {
+    padding-right: 0;
+  }
+
+  .input--contacts {
+    margin-right: 5px;
+  }
+}
